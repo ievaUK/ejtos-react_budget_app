@@ -10,13 +10,12 @@ const CurrencySelect = (props) => {
         <div className="alert bg-success">
             <div className='row'>
                 <div className="input-group" style={{ marginLeft: '2rem' }}>
-                    <div className="">
-                        <label 
-                            className="text-white" 
-                            htmlFor="inputGroupSelect05">Currency </label>
-                    </div>
+                    <label 
+                        className="text-white" 
+                        htmlFor="inputGroupSelect05">Currency </label>
+
                     <select 
-                        className="custom-select" 
+                        className="custom-select bg-success text-white" 
                         id="inputGroupSelect05" 
                         value={currency} 
                         onChange={(event) => setField(event.target.value)}>
